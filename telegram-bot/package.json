@@ -7,7 +7,7 @@
   "homepage": "https://amodb.dev",
   "repository": {
     "type": "git",
-    "url": "https://github.com/netlistenany-bot/amodb-examples.git",
+    "url": "https://github.com/amodb-dev/amodb-examples.git",
     "directory": "telegram-bot"
   },
   "type": "module",

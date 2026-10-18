@@ -27,4 +27,13 @@ Text in docs and comments: short, concrete sentences, sentence case headings, no
 
 Never commit API keys. Use environment variables and `.env` files that are ignored by git.
 
+## Releasing
+
+For maintainers.
+
+1. Update `CHANGELOG.md`.
+2. Tag the commit and push the tag: `git tag v0.2.0 && git push origin v0.2.0`.
+
+The Release workflow builds every example and creates the GitHub release. Nothing is published to a package registry.
+
 By contributing you agree that your work is released under the MIT license of this repository.

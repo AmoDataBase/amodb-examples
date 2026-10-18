@@ -2,6 +2,11 @@
 
 All notable changes to this project are listed here. The format follows Keep a Changelog.
 
+## Unreleased
+
+- Add CI, release and Dependabot workflows.
+- Repository and package URLs now point to the amodb-dev organization.
+
 ## 0.1.0 - 2026-10-18
 
 Initial release.

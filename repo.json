@@ -1,0 +1,6 @@
+{
+  "name": "amodb-examples",
+  "description": "Small examples for the amodb movie and TV API: a Next.js app, a Python CLI, a Telegram bot and a Discord bot.",
+  "homepage": "https://amodb.dev",
+  "topics": ["amodb", "tmdb", "omdb", "examples", "nextjs", "python", "telegram-bot", "discord-bot", "discordjs", "movie-api"]
+}

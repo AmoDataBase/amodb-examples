@@ -1,10 +1,37 @@
-<!-- GitHub topics: amodb, tmdb, omdb, examples, nextjs, python, telegram-bot, discord-bot, grammy, discordjs, movie-api -->
+<p align="center">
+  <a href="https://amodb.dev">
+    <img src="https://raw.githubusercontent.com/amodb-dev/.github/main/assets/lockup.png" alt="amodb" width="260">
+  </a>
+</p>
 
-# amodb examples
+<h1 align="center">amodb-examples</h1>
+
+<p align="center">Small examples for the amodb API: a Next.js app, a Python CLI, a Telegram bot and a Discord bot.</p>
+
+<p align="center">
+  <a href="https://github.com/amodb-dev/amodb-examples/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/amodb-dev/amodb-examples/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://github.com/amodb-dev/amodb-examples/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/amodb-dev/amodb-examples"></a>
+</p>
 
 Four small, independent examples that call the amodb movie and TV API. Each one uses plain `fetch` or the Python standard library. None of them needs an SDK package.
 
 amodb is a paid API that is compatible with TMDB v3 and OMDb. Get a key at https://amodb.dev/pricing. Every example reads the key from `AMODB_API_KEY`. The same code works against any TMDB v3 compatible base URL: set the optional `AMODB_BASE_URL` (default `https://api.amodb.dev/3`).
+
+## Install
+
+```sh
+git clone https://github.com/amodb-dev/amodb-examples
+cd amodb-examples
+```
+
+Each example lists its own install step in the table below. The Python CLI needs none.
+
+## Quick start
+
+```sh
+export AMODB_API_KEY=your_32_character_key
+python python-cli/amodb_cli.py search "inception"
+```
 
 ## Examples
 
@@ -34,9 +61,16 @@ Every plan returns all data. Plans differ only in requests per minute. When you 
 
 ## Links
 
-- Website and pricing: https://amodb.dev/pricing
+- Website: https://amodb.dev
+- Docs: https://amodb.dev/docs
+- Pricing: https://amodb.dev/pricing
+- Status: https://amodb.dev/status
 - API host: https://api.amodb.dev
 - Images: https://img.amodb.dev
+- Issues: https://github.com/amodb-dev/amodb-examples/issues
+- Changelog: https://github.com/amodb-dev/amodb-examples/blob/main/CHANGELOG.md
+- Security: https://github.com/amodb-dev/amodb-examples/blob/main/SECURITY.md
+- Organization: https://github.com/amodb-dev
 
 ## License
 

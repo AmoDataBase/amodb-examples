@@ -1,0 +1,42 @@
+# Builds every example and creates a GitHub release when a tag like v0.2.0 is pushed.
+# Nothing is published to a package registry. The examples are meant to be cloned.
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Build the Next.js app
+        working-directory: nextjs-movie-app
+        run: |
+          npm install --no-audit --no-fund
+          npm run typecheck
+          npm run build
+      - name: Check the bots
+        run: |
+          for dir in telegram-bot discord-bot; do
+            (cd "$dir" && npm install --no-audit --no-fund && npm run check)
+          done
+      - name: Test the Python CLI
+        working-directory: python-cli
+        run: python -m unittest
+      - name: Create the GitHub release
+        run: gh release create "$GITHUB_REF_NAME" --title "$GITHUB_REF_NAME" --generate-notes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

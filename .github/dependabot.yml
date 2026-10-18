@@ -1,0 +1,19 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directories:
+      - /nextjs-movie-app
+      - /telegram-bot
+      - /discord-bot
+    schedule:
+      interval: weekly
+    groups:
+      npm-dependencies:
+        patterns: ['*']
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      github-actions:
+        patterns: ['*']
