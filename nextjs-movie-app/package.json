@@ -7,7 +7,7 @@
   "homepage": "https://amodb.dev",
   "repository": {
     "type": "git",
-    "url": "https://github.com/amodb-dev/amodb-examples.git",
+    "url": "https://github.com/AmoDataBase/amodb-examples.git",
     "directory": "nextjs-movie-app"
   },
   "engines": {

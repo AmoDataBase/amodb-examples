@@ -1,8 +1,8 @@
 <p align="center">
   <a href="https://amodb.dev">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/amodb-dev/.github/main/assets/lockup-dark.png">
-      <img src="https://raw.githubusercontent.com/amodb-dev/.github/main/assets/lockup-light.png" alt="amodb" width="260">
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AmoDataBase/.github/main/assets/lockup-dark.png">
+      <img src="https://raw.githubusercontent.com/AmoDataBase/.github/main/assets/lockup-light.png" alt="amodb" width="260">
     </picture>
   </a>
 </p>
@@ -12,8 +12,8 @@
 <p align="center">Small examples for the amodb API: a Next.js app, a Python CLI, a Telegram bot and a Discord bot.</p>
 
 <p align="center">
-  <a href="https://github.com/amodb-dev/amodb-examples/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/amodb-dev/amodb-examples/actions/workflows/ci.yml/badge.svg"></a>
-  <a href="https://github.com/amodb-dev/amodb-examples/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/amodb-dev/amodb-examples"></a>
+  <a href="https://github.com/AmoDataBase/amodb-examples/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/AmoDataBase/amodb-examples/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://github.com/AmoDataBase/amodb-examples/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/AmoDataBase/amodb-examples"></a>
 </p>
 
 Four small, independent examples that call the amodb movie and TV API. Each one uses plain `fetch` or the Python standard library. None of them needs an SDK package.
@@ -23,7 +23,7 @@ amodb is a paid API that is compatible with TMDB v3 and OMDb. Get a key at https
 ## Install
 
 ```sh
-git clone https://github.com/amodb-dev/amodb-examples
+git clone https://github.com/AmoDataBase/amodb-examples
 cd amodb-examples
 ```
 
@@ -70,10 +70,10 @@ Every plan returns all data. Plans differ only in requests per minute. When you 
 - Status: https://amodb.dev/status
 - API host: https://api.amodb.dev
 - Images: https://img.amodb.dev
-- Issues: https://github.com/amodb-dev/amodb-examples/issues
-- Changelog: https://github.com/amodb-dev/amodb-examples/blob/main/CHANGELOG.md
-- Security: https://github.com/amodb-dev/amodb-examples/blob/main/SECURITY.md
-- Organization: https://github.com/amodb-dev
+- Issues: https://github.com/AmoDataBase/amodb-examples/issues
+- Changelog: https://github.com/AmoDataBase/amodb-examples/blob/main/CHANGELOG.md
+- Security: https://github.com/AmoDataBase/amodb-examples/blob/main/SECURITY.md
+- Organization: https://github.com/AmoDataBase
 
 ## License
 
